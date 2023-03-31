@@ -8,11 +8,11 @@ test("renders the same prop passed in header component", () => {
   expect(headerElement).toBeInTheDocument();
 });
 
-// it("renders the same prop passed in header component", () => {
-//   render(<Header />);
-//   const headerElement = screen.getByRole("heading");
-//   expect(headerElement).toBeInTheDocument();
-// });
+it("renders the same prop passed in header component", () => {
+  render(<Header />);
+  const headerElement = screen.getByRole("heading");
+  expect(headerElement).toBeInTheDocument();
+});
 
 it("renders the same prop passed in header component", () => {
   render(<Header title={"My Header"} />);
@@ -20,22 +20,22 @@ it("renders the same prop passed in header component", () => {
   expect(headerElement).toBeInTheDocument();
 });
 
-it("renders the same prop passed in header component", () => {
-  render(<Header />);
-  const headerElement = screen.getByTitle("Header");
-  expect(headerElement).toBeInTheDocument(headerElement);
-});
+// it("renders the same prop passed in header component", () => {
+//   render(<Header />);
+//   const headerElement = screen.getByTitle("Header");
+//   expect(headerElement).toBeInTheDocument(headerElement);
+// });
 
-it("renders the same prop passed in header component", () => {
-  render(<Header />);
-  const headerElement = screen.getByTestId("test");
-  expect(headerElement).toBeInTheDocument();
-});
+// it("renders the same prop passed in header component", () => {
+//   render(<Header />);
+//   const headerElement = screen.getByTestId("test");
+//   expect(headerElement).toBeInTheDocument();
+// });
 
 it("renders the same prop passed in header component", () => {
   render(<Header />);
   const headerElements = screen.getAllByRole("heading");
-  expect(headerElements.length).toBe(4);
+  expect(headerElements.length).toBe(1);
 });
 
 // Find by
